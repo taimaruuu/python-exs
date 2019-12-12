@@ -6,10 +6,12 @@
 #     Print out that many copies of the previous message on separate lines. (Hint: the string "\n is the same as pressing the ENTER button)
 import datetime
 
-name = input("What is your name?\n")
+name = input("What is your name? ")
 name = name.capitalize()
-age = input ("What is your age?\n")
+age = input ("What is your age? ")
+rep = input("Give me a number: ")
 now = datetime.datetime.now()
 year_when_100 = now.year - int(age) + 100
 
-print("Hello " + name + ", you will be 100 years old in " + str(year_when_100))
+for x in range(int(rep)):
+	print("Hello " + name + ", you will be 100 years old in " + str(year_when_100))
