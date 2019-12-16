@@ -23,7 +23,11 @@ if __name__ == "__main__":
     answer = binary_search(a, 0, len(a), 10)
     print(answer)
 
-    a = [1, 2]
+    a = [2, 2, 2, 2, 2, 2, 2, 2]
+    answer = binary_search(a, 0, len(a), 3)
+    print(answer)
+
+    a = [2, 2, 2, 2, 2, 2, 2, 2]
     answer = binary_search(a, 0, len(a), 2)
     print(answer)
 
